@@ -54,14 +54,38 @@
 		FAFFD5DF21E6919C00E6B399 /* TipsyCalcApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAFFD5F421E6929700E6B399 /* Controller */,
+				FAFFD5F321E6929100E6B399 /* View */,
+				FAFFD5F221E6927C00E6B399 /* Model */,
 				FAFFD5E021E6919C00E6B399 /* AppDelegate.swift */,
-				FAFFD5E221E6919C00E6B399 /* ViewController.swift */,
 				FAFFD5E421E6919C00E6B399 /* Main.storyboard */,
 				FAFFD5E721E6919D00E6B399 /* Assets.xcassets */,
 				FAFFD5E921E6919D00E6B399 /* LaunchScreen.storyboard */,
 				FAFFD5EC21E6919D00E6B399 /* Info.plist */,
 			);
 			path = TipsyCalcApp;
+			sourceTree = "<group>";
+		};
+		FAFFD5F221E6927C00E6B399 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAFFD5F321E6929100E6B399 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAFFD5F421E6929700E6B399 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAFFD5E221E6919C00E6B399 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
