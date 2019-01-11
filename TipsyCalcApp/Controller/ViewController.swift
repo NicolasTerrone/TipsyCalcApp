@@ -41,8 +41,13 @@ class ViewController: UIViewController {
         setTipCalculationValue()
         updateUI()
     }
-    @IBAction func tipPercentageDidChange(_ sender: Any) {
+    @IBAction func tipPercentageDidChange(_ sender: UISlider) {
         // print(tipPercentageSlider.value) //DEBUG
+        let steps: Float = 100
+        let roundedValue = round(sender.value * steps) / steps
+        sender.value = roundedValue
+        
+        
         setTipCalculationValue()
         updateUI()
     }
