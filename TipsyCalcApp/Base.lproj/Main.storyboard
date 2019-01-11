@@ -69,6 +69,9 @@
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.10000000000000001" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="PP0-Lw-2vE">
                                                 <rect key="frame" x="48" y="0.0" width="269" height="31"/>
+                                                <connections>
+                                                    <action selector="tipPercentageDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="J6e-Ld-wQr"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
