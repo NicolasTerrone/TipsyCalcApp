@@ -13,6 +13,8 @@ class TipModel{
     private var _tipPercent: Double = 0
     private var _tipAmount: Double = 0
     private var _totalAmount: Double = 0
+    private var _numberOfPeople: Double = 1
+    private var _totalAmountByPerson: Double = 0
     
     var billAmount: Double{
         get{
@@ -42,13 +44,29 @@ class TipModel{
         }
     }
     
-    init(billAmount: Double, tipPercent:Double){
+    var numberOfPeople: Double{
+        get{
+            return _numberOfPeople
+        } set {
+            _numberOfPeople = newValue
+        }
+    }
+    
+    var totalAmountByPerson: Double{
+        get{
+            return _totalAmountByPerson
+        }
+    }
+    
+    init(billAmount: Double, tipPercent:Double, numberOfPeople: Double){
         self._billAmount = billAmount
         self._tipPercent = tipPercent
+        self._numberOfPeople = numberOfPeople
     }
     
     func calculateTip(){
         _tipAmount = _billAmount * _tipPercent
         _totalAmount = _tipAmount + _billAmount
+        _totalAmountByPerson = _totalAmount / _numberOfPeople
     }
 }
